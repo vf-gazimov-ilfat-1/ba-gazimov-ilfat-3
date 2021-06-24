@@ -1,0 +1,53 @@
+body {
+  font-family: 'Gilroy', sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 10px;
+  &__min-box{
+    display: flex;
+    margin-top: 40px;
+  }
+  &__box  {
+    height: 705px;
+  }
+  &__text-block {
+    width: 200px;
+    height: 37px;
+    margin-top: 48px;
+  }
+  &__title-block {
+    width: 173px;
+    height: 70px;
+    margin-right: 40px;
+  }
+}
+
+.title-block {
+  &_one {
+    font-size: 30px;
+    
+  }
+  &_two {
+    font-size: 25px;
+    max-width: 500px;
+  }
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+// Подключение компонентов
+@import "./header/header";
+@import "./footer/footer";
+@import "./button/button";
